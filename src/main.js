@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Vue from 'vue';
-import ShardsVue from 'shards-vue';
+import ShardsVue from '@gorse/shards-vue';
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.css';
