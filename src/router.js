@@ -1,5 +1,4 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
 import PersonalBlog from './views/PersonalBlog.vue';
 import UserProfileLite from './views/UserProfileLite.vue';
@@ -9,15 +8,12 @@ import ComponentsOverview from './views/ComponentsOverview.vue';
 import Tables from './views/Tables.vue';
 import BlogPosts from './views/BlogPosts.vue';
 
-Vue.use(Router);
-
-export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+export default createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   linkActiveClass: 'active',
   linkExactActiveClass: 'exact-active',
   scrollBehavior() {
-    return { x: 0, y: 0 };
+    return { left: 0, top: 0 };
   },
   routes: [
     {
@@ -58,8 +54,9 @@ export default new Router({
       path: '/blog-posts',
       name: 'blog-posts',
       component: BlogPosts,
-    }, {
-      path: '*',
+    },
+    {
+      path: '/:pathMatch(.*)*',
       redirect: '/errors',
     },
   ],

@@ -1,7 +1,7 @@
 <template>
   <div>
     <d-alert class="alert-royal-blue" show>
-      <i class="fa fa-info mx-2"></i>
+      <i class="fa fa-info mx-2" />
       <strong>How you doin'?</strong> I'm just a friendly, good-looking notification message and I come in all the colors you can see below. Pretty cool, huh?
     </d-alert>
 
@@ -21,25 +21,25 @@
           <span style="font-size: 16px;" class="d-block mb-2 text-muted"><strong>Colors</strong></span>
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-primary rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-primary rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-secondary rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-secondary rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-success rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-success rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-info rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-info rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-warning rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-warning rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-danger rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-danger rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
         <d-col class="mb-4">
-          <div class="bg-dark rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);"></div>
+          <div class="bg-dark rounded text-white text-center p-4" style="box-shadow: inset 0 0 5px rgba(0,0,0,.2);" />
         </d-col>
       </d-row>
 
@@ -364,17 +364,21 @@
                   <strong class="text-muted d-block mb-2">Seamless Input Groups</strong>
 
                   <d-input-group seamless class="mb-3">
-                    <d-input-group-text slot="prepend">
-                      <i class="material-icons">person</i>
-                    </d-input-group-text>
+                    <template #prepend>
+                      <d-input-group-text>
+                        <i class="material-icons">person</i>
+                      </d-input-group-text>
+                    </template>
                     <d-input value="design.revision" />
                   </d-input-group>
 
                   <d-input-group seamless class="mb-3">
                     <d-input type="password" value="mySuperSecretPassword" />
-                    <d-input-group-text slot="append">
-                      <i class="material-icons">lock</i>
-                    </d-input-group-text>
+                    <template #append>
+                      <d-input-group-text>
+                        <i class="material-icons">lock</i>
+                      </d-input-group-text>
+                    </template>
                   </d-input-group>
 
                   <d-input-group class="mb-2">

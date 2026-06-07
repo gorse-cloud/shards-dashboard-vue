@@ -4,7 +4,7 @@
     <!-- Card Header -->
     <d-card-header class="border-bottom">
       <h6 class="m-0">{{ title }}</h6>
-      <div class="block-handle"></div>
+      <div class="block-handle" />
     </d-card-header>
 
     <d-card-body class="pt-0">
@@ -15,9 +15,11 @@
           <d-input-group size="sm" class="date-range d-flex justify-content-left">
             <d-datepicker v-model="dateRange.from" :highlighted="{ from: dateRange.from, to: dateRange.to || new Date() }" placeholder="Start Date" typeable small />
             <d-datepicker v-model="dateRange.to" :highlighted="{ from: dateRange.from, to: dateRange.to || new Date() }" placeholder="End Date" typeable small />
-            <d-input-group-text slot="append">
-              <i class="material-icons">&#xE916;</i>
-            </d-input-group-text>
+            <template #append>
+              <d-input-group-text>
+                <i class="material-icons">&#xE916;</i>
+              </d-input-group-text>
+            </template>
           </d-input-group>
         </d-col>
 
@@ -29,8 +31,8 @@
       </d-row>
 
       <!-- Legend & Chart -->
-      <div ref="legend"></div>
-      <canvas height="120" ref="canvas" style="max-width: 100% !important;"></canvas>
+      <div ref="legend" />
+      <canvas height="120" ref="canvas" style="max-width: 100% !important;" />
 
     </d-card-body>
   </d-card>
@@ -148,7 +150,7 @@ export default {
       options: chartOptions,
     });
 
-      // They can still be triggered on hover.
+    // They can still be triggered on hover.
     const buoMeta = BlogUsersOverview.getDatasetMeta(0);
     buoMeta.data[0]._model.radius = 0;
     buoMeta.data[this.chartData.datasets[0].data.length - 1]._model.radius = 0;
@@ -158,4 +160,3 @@ export default {
   },
 };
 </script>
-

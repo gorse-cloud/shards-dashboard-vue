@@ -3,7 +3,7 @@
     <d-card-body>
       <d-form class="add-new-post">
         <d-input size="lg" class="mb-3" placeholder="Your Post Title" />
-        <div ref="editor" class="add-new-post__editor mb-1"></div>
+        <div ref="editor" class="add-new-post__editor mb-1" />
       </d-form>
     </d-card-body>
   </d-card>
@@ -36,4 +36,3 @@ export default {
   },
 };
 </script>
-

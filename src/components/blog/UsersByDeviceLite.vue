@@ -8,7 +8,7 @@
 
     <!-- Chart -->
     <div class="card-body d-flex py-0">
-      <canvas height="220" ref="canvas" class="blog-users-by-device m-auto"></canvas>
+      <canvas height="220" ref="canvas" class="blog-users-by-device m-auto" />
     </div>
 
     <d-card-footer class="border-top">
@@ -116,4 +116,3 @@ export default {
   },
 };
 </script>
-

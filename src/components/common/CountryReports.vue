@@ -4,13 +4,13 @@
     <!-- Card Header -->
     <div class="card-header border-bottom">
       <h6 class="m-0">{{ title }}</h6>
-      <div class="block-handle"></div>
+      <div class="block-handle" />
     </div>
 
     <div class="card-body p-0">
 
       <!-- Map Container -->
-      <div ref="mContainer" width="100%" height="100%" style="width: 100%; height: 180px;"></div>
+      <div ref="mContainer" width="100%" height="100%" style="width: 100%; height: 180px;" />
 
       <!-- Countries Table List -->
       <table class="table m-0">

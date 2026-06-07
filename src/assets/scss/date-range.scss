@@ -1,5 +1,21 @@
 .date-range .vdp-datepicker {
+  flex: 0 0 150px;
   max-width: 150px;
+
+  .dp--menu-wrapper {
+    left: 0 !important;
+    top: 1.9375rem !important;
+    transform: none !important;
+  }
+
+  .dp--arrow-top {
+    display: none;
+  }
+
+  .vdp-datepicker__calendar.vdp-datepicker__small {
+    width: 235px;
+    max-width: 235px;
+  }
 
   input {
     font-size: .6875rem !important;

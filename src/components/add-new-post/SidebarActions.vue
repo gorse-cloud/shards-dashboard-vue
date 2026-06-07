@@ -22,7 +22,7 @@
             <i class="material-icons">file_copy</i> Publish
           </d-button>
         </d-list-group-item>
-        </d-list-group>
+      </d-list-group>
     </d-card-body>
   </d-card>
 </template>

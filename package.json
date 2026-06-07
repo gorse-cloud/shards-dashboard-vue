@@ -11,21 +11,24 @@
   },
   "dependencies": {
     "@gorse/shards-ui": "^3.0.1",
-    "@gorse/shards-vue": "^1.0.8",
+    "@gorse/shards-vue": "^2.0.0",
     "bootstrap": "^4.1.3",
     "chart.js": "^2.7.2",
     "quill": "^1.3.6",
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue": "^3.5.35",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.1.0",
-    "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
-    "@vue/eslint-config-airbnb": "^3.0.3",
+    "@babel/eslint-parser": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@vue/cli-plugin-babel": "^5.0.9",
+    "@vue/cli-plugin-eslint": "^5.0.9",
+    "@vue/cli-service": "^5.0.9",
+    "@vue/compiler-sfc": "^3.5.35",
+    "@vue/eslint-config-airbnb": "^8.0.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^9.33.0",
     "sass": "^1.100.0",
-    "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "sass-loader": "^17.0.0"
   }
 }

@@ -4,7 +4,7 @@
     <!-- Card Header -->
     <d-card-header class="border-bottom">
       <h6 class="m-0">{{ title }}</h6>
-      <div class="block-handle"></div>
+      <div class="block-handle" />
     </d-card-header>
 
     <d-card-body class="p-0">

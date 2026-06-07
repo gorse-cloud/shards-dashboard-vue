@@ -1,18 +1,18 @@
 <template>
-    <d-card :class="['stats-small', computedVariationClass, 'card', 'card-small']">
-        <d-card-body :class="[computedBodyClass]">
-            <div :class="['d-flex', computedInnerWrapperClass]">
-                <div :class="['stats-small__data', computedDataFieldClass]">
-                    <span :class="['stats-small__label', 'text-uppercase', computedLabelClass]">{{ label }}</span>
-                    <h6 :class="['stats-small__value', 'count', computedValueClass]">{{ value }}</h6>
-                </div>
-                <div :class="['stats-small__data', computedInnerDataFieldClass]">
-                    <span :class="['stats-small__percentage', `stats-small__percentage--${computedPercentageModifier}`]">{{ percentage }}</span>
-                </div>
-            </div>
-            <canvas :height="computedCanvasHeight" ref="canvas" :class="[computedChartId]"></canvas>
-        </d-card-body>
-    </d-card>
+  <d-card :class="['stats-small', computedVariationClass, 'card', 'card-small']">
+    <d-card-body :class="[computedBodyClass]">
+      <div :class="['d-flex', computedInnerWrapperClass]">
+        <div :class="['stats-small__data', computedDataFieldClass]">
+          <span :class="['stats-small__label', 'text-uppercase', computedLabelClass]">{{ label }}</span>
+          <h6 :class="['stats-small__value', 'count', computedValueClass]">{{ value }}</h6>
+        </div>
+        <div :class="['stats-small__data', computedInnerDataFieldClass]">
+          <span :class="['stats-small__percentage', `stats-small__percentage--${computedPercentageModifier}`]">{{ percentage }}</span>
+        </div>
+      </div>
+      <canvas :height="computedCanvasHeight" ref="canvas" :class="[computedChartId]" />
+    </d-card-body>
+  </d-card>
 </template>
 
 <script>
@@ -88,6 +88,7 @@ export default {
      */
     chartConfig: {
       type: Object,
+      default: null,
     },
     /**
      * The variation.

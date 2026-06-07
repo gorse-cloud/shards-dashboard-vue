@@ -66,7 +66,7 @@
                 </d-col>
 
                 <!-- Zip Code -->
-                <d-col md="2"  class="form-group">
+                <d-col md="2" class="form-group">
                   <label for="inputZip">Zip</label>
                   <input type="text" class="form-control" id="inputZip">
                 </d-col>
@@ -78,7 +78,7 @@
                 <!-- Description -->
                 <d-col md="12" class="form-group">
                   <label for="feDescription">Description</label>
-                  <d-textarea name="feDescription" rows="5"></d-textarea>
+                  <d-textarea name="feDescription" rows="5" />
                 </d-col>
               </d-form-row>
 

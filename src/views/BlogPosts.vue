@@ -12,10 +12,10 @@
     <d-row>
       <d-col v-for="(post, idx) in PostsListOne" :key="idx" lg="3" md="6" sm="12" class="mb-4">
         <d-card class="card-small card-post card-post--1">
-          <div class="card-post__image" :style="{ backgroundImage: 'url(\'' + post.backgroundImage + '\')' }">
-            <d-badge pill :class="['card-post__category', 'bg-' + post.categoryTheme ]">{{ post.category }}</d-badge>
+          <div class="card-post__image" :style="{ backgroundImage: `url('${post.backgroundImage}')` }">
+            <d-badge pill :class="['card-post__category', `bg-${post.categoryTheme}`]">{{ post.category }}</d-badge>
             <div class="card-post__author d-flex">
-              <a href="#" class="card-post__author-avatar card-post__author-avatar--small" :style="{ backgroundImage: 'url(\'' + post.authorAvatar + '\')' }">Written by {{ post.author }}</a>
+              <a href="#" class="card-post__author-avatar card-post__author-avatar--small" :style="{ backgroundImage: `url('${post.authorAvatar}')` }">Written by {{ post.author }}</a>
             </div>
           </div>
           <d-card-body>
@@ -33,10 +33,10 @@
     <d-row>
       <d-col v-for="(post, idx) in PostsListTwo" :key="idx" lg="6" sm="12" class="mb-4">
         <d-card class="card-small card-post card-post--aside card-post--1">
-          <div class="card-post__image" :style="{ backgroundImage: 'url(\'' + post.backgroundImage + '\')' }">
-            <d-badge pill :class="['card-post__category', 'bg-' + post.categoryTheme ]">{{ post.category }}</d-badge>
+          <div class="card-post__image" :style="{ backgroundImage: `url('${post.backgroundImage}')` }">
+            <d-badge pill :class="['card-post__category', `bg-${post.categoryTheme}`]">{{ post.category }}</d-badge>
             <div class="card-post__author d-flex">
-              <a href="#" class="card-post__author-avatar card-post__author-avatar--small" :style="{ backgroundImage: 'url(\'' + post.authorAvatar + '\')' }">Written by Anna Ken</a>
+              <a href="#" class="card-post__author-avatar card-post__author-avatar--small" :style="{ backgroundImage: `url('${post.authorAvatar}')` }">Written by Anna Ken</a>
             </div>
           </div>
           <d-card-body>
@@ -60,7 +60,7 @@
           </d-card-body>
           <d-card-footer class="border-top d-flex">
             <div class="card-post__author d-flex">
-              <a href="#" class="card-post__author-avatar card-post__author-avatar--small" :style="{ backgroundImage: 'url(\'' + post.authorAvatar + '\')' }">Written by James Khan</a>
+              <a href="#" class="card-post__author-avatar card-post__author-avatar--small" :style="{ backgroundImage: `url('${post.authorAvatar}')` }">Written by James Khan</a>
               <div class="d-flex flex-column justify-content-center ml-3">
                 <span class="card-post__author-name">{{ post.author }}</span>
                 <small class="text-muted">{{ post.date }}</small>
@@ -68,7 +68,7 @@
             </div>
             <div class="my-auto ml-auto">
               <d-button size="sm" class="btn-white">
-                <i class="far fa-bookmark mr-1"></i> Bookmark
+                <i class="far fa-bookmark mr-1" /> Bookmark
               </d-button>
             </div>
           </d-card-footer>
@@ -80,7 +80,7 @@
     <d-row>
       <d-col v-for="(post, idx) in PostsListFour" :key="idx" lg="3" md="6" sm="12" class="mb-4">
         <d-card class="card-small card-post h-10">
-          <div class="card-post__image" :style="{ backgroundImage: 'url(\'' + post.backgroundImage + '\')' }"></div>
+          <div class="card-post__image" :style="{ backgroundImage: `url('${post.backgroundImage}')` }" />
           <d-card-body>
             <h5 class="card-title">
               <a class="text-fiord-blue" href="#">{{ post.title }}</a>
@@ -136,7 +136,7 @@ const PostsListOne = [{
   date: '29 February 2019',
 }];
 
-  // Second Row of posts
+// Second Row of posts
 const PostsListTwo = [{
   backgroundImage: require('@/assets/images/content-management/5.jpeg'),
   category: 'Travel',
@@ -157,7 +157,7 @@ const PostsListTwo = [{
   date: '29 February 2019',
 }];
 
-  // Third Row of Posts
+// Third Row of Posts
 const PostsListThree = [{
   author: 'John James',
   authorAvatar: require('@/assets/images/avatars/1.jpg'),
@@ -227,4 +227,3 @@ export default {
   },
 };
 </script>
-

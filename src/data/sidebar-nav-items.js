@@ -1,4 +1,4 @@
-export default function () {
+export default function getSidebarItems() {
   return [{
     title: 'Blog Dashboard',
     to: {
