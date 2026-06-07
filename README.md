@@ -43,8 +43,8 @@ A free Vue admin dashboard template pack featuring a modern design system <br />
 
 ### Quick Start
 
-* Install dependencies by running `yarn`.
-* Run `yarn serve` to start the local development server.
+* Install dependencies by running `pnpm install`.
+* Run `pnpm serve` to start the local development server.
 * 😎 **That's it!** You're ready to start building awesome dashboards.
 
 <br />
